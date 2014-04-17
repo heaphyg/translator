@@ -10,6 +10,7 @@ post '/' do
     @german_word = GermanWord.find_by_word(params[:word])
     @english_words = @german_word.english_words
   end
+  erb :index
 end
 
 

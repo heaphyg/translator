@@ -13,19 +13,19 @@ EnglishWord.create(word: "car")
 
 
 # GermanWord(s)
-GermanWord.create(word: "Hund")
-GermanWord.create(word: "Katze")
-GermanWord.create(word: "Apfel")
-GermanWord.create(word: "Fish")
-GermanWord.create(word: "Tabelle")
-GermanWord.create(word: "Stuhl")
-GermanWord.create(word: "Jacke") # jacket
-GermanWord.create(word: "Mantel") #jacket
-GermanWord.create(word: "Getränk")
-GermanWord.create(word: "Lebensmittel")  #food
-GermanWord.create(word: "Essen")  #food
-GermanWord.create(word: "Auto")  #car
-GermanWord.create(word: "Wagen") #car
+GermanWord.create(word: "hund")
+GermanWord.create(word: "katze")
+GermanWord.create(word: "apfel")
+GermanWord.create(word: "fish")
+GermanWord.create(word: "tabelle")
+GermanWord.create(word: "stuhl")
+GermanWord.create(word: "jacke") # jacket
+GermanWord.create(word: "mantel") #jacket
+GermanWord.create(word: "getränk")
+GermanWord.create(word: "lebensmittel")  #food
+GermanWord.create(word: "essen")  #food
+GermanWord.create(word: "auto")  #car
+GermanWord.create(word: "wagen") #car
 
 
 
