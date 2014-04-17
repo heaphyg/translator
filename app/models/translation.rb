@@ -1,3 +1,5 @@
 class Translation < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :english_word
+  belongs_to :german_word
+  has_many :edits
 end
