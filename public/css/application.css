@@ -31,3 +31,7 @@ th {
   float: right;
 }
 
+#error {
+  color: red;
+}
+
