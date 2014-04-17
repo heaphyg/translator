@@ -30,18 +30,18 @@ GermanWord.create(word: "Wagen") #car
 
 
 # Translation(s)
-Tranlation.create(english_word_id: 1, german_word_id: 1, :edits)
-Tranlation.create(english_word_id: 2, german_word_id: 2, :edits)
-Tranlation.create(english_word_id: 3, german_word_id: 3, :edits)
-Tranlation.create(english_word_id: 4, german_word_id: 4, :edits)
-Tranlation.create(english_word_id: 5, german_word_id: 5, :edits)
-Tranlation.create(english_word_id: 6, german_word_id: 6, :edits)
-Tranlation.create(english_word_id: 7, german_word_id: 7, :edits) ##
-Tranlation.create(english_word_id: 7, german_word_id: 8, :edits) ##
-Tranlation.create(english_word_id: 8, german_word_id: 9, :edits)
-Tranlation.create(english_word_id: 9, german_word_id: 10, :edits) ##
-Tranlation.create(english_word_id: 9, german_word_id: 11, :edits) ##
-Tranlation.create(english_word_id: 10, german_word_id: 12, :edits) 
+Translation.create(english_word_id: 1, german_word_id: 1)
+Translation.create(english_word_id: 2, german_word_id: 2)
+Translation.create(english_word_id: 3, german_word_id: 3)
+Translation.create(english_word_id: 4, german_word_id: 4)
+Translation.create(english_word_id: 5, german_word_id: 5)
+Translation.create(english_word_id: 6, german_word_id: 6)
+Translation.create(english_word_id: 7, german_word_id: 7) ##
+Translation.create(english_word_id: 7, german_word_id: 8) ##
+Translation.create(english_word_id: 8, german_word_id: 9)
+Translation.create(english_word_id: 9, german_word_id: 10) ##
+Translation.create(english_word_id: 9, german_word_id: 11) ##
+Translation.create(english_word_id: 10, german_word_id: 12) 
 
 
 
