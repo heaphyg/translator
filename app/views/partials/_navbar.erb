@@ -1,0 +1,11 @@
+<div class="navbar">
+  <ul class="nav-list">
+    <a href="/"><li>Home</li></a>
+    <% if current_user %>
+      <a href="#"><li><%= current_user.name %></li></a>
+      <a href="/users/logout"><button class="loginout">Logout</button></a>
+    <% else %>
+      <a href="/users/login"><button class="loginout">Login</button></a>
+    <% end %>
+  </ul>
+</div>
