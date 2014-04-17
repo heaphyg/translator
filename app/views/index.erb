@@ -7,5 +7,18 @@
     <input type="radio" name="language" value="german">German to English<br><br>
     <input type="submit" value="Lookup!">
   </form>
+  <br><br>
+
+  <% if current_user %>
+  <div class="word-creation">
+
+    <form class='word-creation-form' action='/words/new'>
+      <input type="radio" name="create-english" value="create">Create English to German translation<br>
+      <input type="radio" name="create-german" value="create">Create German to English translation<br>
+    </form>
+
+  <% end %>
+
+  </div>
 
 </div>
