@@ -19,13 +19,13 @@ GermanWord.create(word: "apfel")
 GermanWord.create(word: "fish")
 GermanWord.create(word: "tabelle")
 GermanWord.create(word: "stuhl")
-GermanWord.create(word: "jacke") # jacket
-GermanWord.create(word: "mantel") #jacket
+GermanWord.create(word: "jacke")  # jacket
+GermanWord.create(word: "mantel") # jacket
 GermanWord.create(word: "getränk")
-GermanWord.create(word: "lebensmittel")  #food
-GermanWord.create(word: "essen")  #food
-GermanWord.create(word: "auto")  #car
-GermanWord.create(word: "wagen") #car
+GermanWord.create(word: "lebensmittel")  # food
+GermanWord.create(word: "essen")         # food
+GermanWord.create(word: "auto")  # car
+GermanWord.create(word: "wagen") # car
 
 
 

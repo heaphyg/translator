@@ -12,6 +12,7 @@ post '/' do
     end
   else
     @german_word = GermanWord.find_by_word(params[:word])
+    puts @german_word
     if @german_word.nil?
       @error = {invalid: "#{params[:word]} is not in the database"}
     else
