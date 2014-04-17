@@ -26,3 +26,8 @@ post '/users/login' do
     erb :'/users/login'
   end
 end
+
+get '/users/logout' do
+  session.clear
+  redirect to ('/')
+end
