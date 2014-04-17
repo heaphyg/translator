@@ -8,6 +8,7 @@
     <input type="submit" value="Lookup!">
   </form>
 
+
   <% if @english_word %>
     <ul>
     <% @german_words.each do |word| %>
@@ -20,6 +21,10 @@
       <li><%= word.word %></li>
     <% end %>
    </ul>
+  <% elsif @error %>
+    <div id='error'>
+      <%= @error[:invalid] %>
+    </div>
   <% end %>
 
 
