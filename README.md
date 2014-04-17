@@ -5,3 +5,7 @@ while someone else can edit your definition. When someone edits your
 words, you will get an email notification!
 
 This is the best alternative to Google Translate yet!!
+
+Here is our database schema
+
+![schema](http://i6.minus.com/ibhxk6ctngTS7d.png)
