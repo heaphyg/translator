@@ -5,6 +5,7 @@
       <a href="#"><li><%= current_user.name %></li></a>
       <a href="/users/logout"><button class="loginout">Logout</button></a>
     <% else %>
+      <a href="/users/new"><button class="loginout">Create Account!</button></a>
       <a href="/users/login"><button class="loginout">Login</button></a>
     <% end %>
   </ul>
