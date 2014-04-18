@@ -14,8 +14,10 @@ $(document).ready(function() {
          tranlation = JSON.parse(response)
          console.log(tranlation)
          // $('.container').append(tranlation.words[0].word);
+         $('.container > .translation_container')
          $.each(tranlation.words, function(index, value){
-           $('.container').append(value.word + ",");
+           $('.container > .translation_container').append("<li>" +value.word +"</li>");
+
          });
    
        }
