@@ -13,9 +13,9 @@ $(document).ready(function() {
        success: function(response){
          translation = JSON.parse(response)
          console.log(translation.alert)
-         if (translation.alert === "This word is not in our database. add it.") {
+         if (translation.alert === "This word is not in our database.") {
               $('.container > .translation_container').empty()
-              $('.container > .translation_container').append("<li>" +translation.alert +"</li>");
+              $('.container > .translation_container').append("<li>" +translation.alert+"<form method='get' action='/words/new'><input type='submit' value='add new word'></form>" +"</li>");
          } else {
               $('.container > .translation_container').empty()
               $.each(translation.words, function(index, value){
@@ -32,10 +32,4 @@ $(document).ready(function() {
 
 
 
-// $.each([ 52, 97 ], function( index, value ) {
-//   alert( index + ": " + value );
-// });
-
-// $.each(tranlation.words, function(index, value){
-//     $('.container').append(value);
-// });
+// "<form method='get' action='/words/new'><input type='submit' value='add new word'></form>"

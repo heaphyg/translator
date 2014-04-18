@@ -29,7 +29,7 @@ post '/' do
    	   @german_words = @english_word.german_words
    	   {words: @german_words}.to_json
    	 else
-   	 	{alert: "This word is not in our database. add it."}.to_json
+   	 	{alert: "This word is not in our database."}.to_json
    	 end
    elsif params[:language] == 'german'
    	 @german_word = GermanWord.find_by_word(params[:word])
@@ -37,7 +37,7 @@ post '/' do
    	   @english_words = @german_word.english_words
    	   {words: @english_words}.to_json
    	 else
-   	 	 {alert: "This word is not in our database. add it."}.to_json
+   	 	 {alert: "This word is not in our database."}.to_json
    	 end
    end
 
