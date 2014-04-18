@@ -7,6 +7,19 @@
     <input type="text" name="word" placeholder="Type in a word"><br><br>
     <input type="submit" value="Lookup!">
   </form>
+  <br><br>
+
+  <% if current_user %>
+  <div class="word-creation">
+
+    <form class='word-creation-form' action='/words/new'>
+      <input type="radio" name="create" value="create-english">Create English to German translation<br>
+      <input type="radio" name="create" value="create-german">Create German to English translation<br>
+    </form>
+
+  <% end %>
+
+  </div>
 
 
   <% if @english_word %>
