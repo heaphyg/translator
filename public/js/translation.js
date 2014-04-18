@@ -15,7 +15,7 @@ $(document).ready(function() {
          console.log(translation.alert)
          if (translation.alert === "This word is not in our database.") {
               $('.container > .translation_container').empty()
-              $('.container > .translation_container').append("<li>" +translation.alert+"<form method='get' action='/words/new'><input type='submit' value='add new word'></form>" +"</li>");
+              $('.container > .translation_container').append("<li>" +translation.alert +"</li>");
          } else {
               $('.container > .translation_container').empty()
               $.each(translation.words, function(index, value){
