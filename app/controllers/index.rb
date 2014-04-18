@@ -25,12 +25,20 @@ post '/' do
     # raise params.inspect
    if params[:language] == 'english'
    	 @english_word = EnglishWord.find_by_word(params[:word])
-   	 @german_words = @english_word.german_words
-   	 {words: @german_words}.to_json
+     if @english_word
+   	   @german_words = @english_word.german_words
+   	   {words: @german_words}.to_json
+   	 else
+   	 	{alert: "This word is not in our database."}.to_json
+   	 end
    elsif params[:language] == 'german'
    	 @german_word = GermanWord.find_by_word(params[:word])
-   	 @english_words = @german_word.english_words
-   	 {words: @english_words}.to_json
+   	 if @german_word
+   	   @english_words = @german_word.english_words
+   	   {words: @english_words}.to_json
+   	 else
+   	 	 {alert: "This word is not in our database."}.to_json
+   	 end
    end
 
 

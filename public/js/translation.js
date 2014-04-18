@@ -11,14 +11,17 @@ $(document).ready(function() {
        url: '/',
        data: translationFormData,
        success: function(response){
-         tranlation = JSON.parse(response)
-         console.log(tranlation)
-         // $('.container').append(tranlation.words[0].word);
-         $('.container > .translation_container').empty()
-         $.each(tranlation.words, function(index, value){
-           $('.container > .translation_container').append("<li>" +value.word +"</li>");
-
-         });
+         translation = JSON.parse(response)
+         console.log(translation.alert)
+         if (translation.alert === "This word is not in our database.") {
+              $('.container > .translation_container').empty()
+              $('.container > .translation_container').append("<li>" +translation.alert +"</li>");
+         } else {
+              $('.container > .translation_container').empty()
+              $.each(translation.words, function(index, value){
+              $('.container > .translation_container').append("<li>" +value.word +"</li>");
+           });
+         }
    
        }
     });
@@ -29,10 +32,4 @@ $(document).ready(function() {
 
 
 
-// $.each([ 52, 97 ], function( index, value ) {
-//   alert( index + ": " + value );
-// });
-
-// $.each(tranlation.words, function(index, value){
-//     $('.container').append(value);
-// });
+// "<form method='get' action='/words/new'><input type='submit' value='add new word'></form>"
