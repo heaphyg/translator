@@ -22,7 +22,7 @@ $(document).ready(function() {
       url: "/words/new",
       data: $('.word-creation-form').serialize(),
       success: function(resp) {
-        console.log(resp)
+        alert(resp);
       }
 
     });
