@@ -19,6 +19,9 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'bcrypt'
+require 'action_mailer'
+
+require 'pry'
 
 require 'erb'
 
@@ -45,3 +48,17 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+ActionMailer::Base.delivery_method = :smtp
+
+ActionMailer::Base.smtp_settings = {
+  :address                => "smtp.gmail.com",
+  :port                   => "587",
+  :domain                 => "gmail.com",
+  :user_name              => "baddass.translator",
+  :password               => "germaniscool151",
+  :authentication         => "plain",
+  :enable_starttls_auto   => true
+}
+
+ActionMailer::Base.view_paths = APP_ROOT.join('app', 'views')

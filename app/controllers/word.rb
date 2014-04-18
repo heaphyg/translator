@@ -46,6 +46,7 @@ post '/words/new' do
 
   end
 
+  UserMailer.new_word_confirmation(@user).deliver
   "Your word was created!"
 
 end
