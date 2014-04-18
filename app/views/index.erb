@@ -1,12 +1,15 @@
 <div class="container">
   <h1>Welcome to the Ultimate Translator!</h1>
 
-  <form action="/" method="POST">
+  <form class="translation_form" action="/" method="POST">
   	<input type="radio" name="language" value="english">English to German<br>
     <input type="radio" name="language" value="german">German to English<br><br>
     <input type="text" name="word" placeholder="Type in a word"><br><br>
     <input type="submit" value="Lookup!">
   </form>
+
+  <div class="translation_container">
+  </div>
 
 
   <% if @english_word %>
