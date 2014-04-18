@@ -18,6 +18,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem "mail", "2.1.3"
+
 gem 'bcrypt'
 
 group :test do

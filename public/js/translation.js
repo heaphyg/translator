@@ -11,6 +11,7 @@ $(document).ready(function() {
        url: '/',
        data: translationFormData,
        success: function(response){
+         console.log(response)
          tranlation = JSON.parse(response)
          console.log(tranlation)
          // $('.container').append(tranlation.words[0].word);
@@ -19,7 +20,7 @@ $(document).ready(function() {
            $('.container > .translation_container').append("<li>" +value.word +"</li>");
 
          });
-   
+
        }
     });
   });

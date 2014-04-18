@@ -23,6 +23,10 @@ post '/' do
 
   #### AJAX version of above
     # raise params.inspect
+    puts "================="
+    puts params[:language]
+    puts "================="
+
    if params[:language] == 'english'
    	 @english_word = EnglishWord.find_by_word(params[:word])
    	 @german_words = @english_word.german_words
