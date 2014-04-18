@@ -5,6 +5,7 @@ end
 post '/users/new' do
   @user = User.new(params[:user])
   if @user.save
+    UserMailer.registration_confirmation(@user).deliver
     session[:user_id] = @user.id
     redirect to ('/')
   else
