@@ -9,6 +9,7 @@ th {
   text-align: left;
 }
 
+
 .nav-list {
   margin: 20px auto;
   margin-bottom: 20px;
@@ -29,3 +30,8 @@ th {
 .loginout {
   float: right;
 }
+
+#error {
+  color: red;
+}
+
